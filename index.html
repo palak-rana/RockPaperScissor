@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Dangrek' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        
+    </head>
+    <body>
+        <!---Header-->
+        <div class="header">
+            <p class="header-text">ROCK<br>PAPER<br>SCISSORS</p>
+            <div class="computer-score">
+                <p class="score-text">Computer <br> Score</p>
+                <p class="score" id="computer_score">0</p>
+            </div>
+            <div class="your-score">
+                <p class="score-text">Your <br> Score </p>
+                <p class="score" id="user_score">0</p>
+            </div>
+        </div>
+
+        <!--GAME start-->
+
+        <div class="game-info" >
+                <p class="info-your">YOU PICKED</p>
+                <p class="info-pc">PC PICKED</p>
+            
+        </div>
+
+        <!--Main Content-->
+
+        <div class="game">
+            <div class="stone user">
+                <img src="./stone.png" >
+            </div>
+            <div class="line1"></div>
+            <div class="paper user">
+                <img src="./paper.png" >
+            </div>
+            <div class="line2"></div>
+            <div class="scissors user">
+                <img src="./scissors.png" >
+            </div>
+            <div class="line3"></div>
+
+            <div class="stone computer">
+                <img src="./stone.png" >
+            </div>
+            <div class="paper1 computer ">
+                <img src="./paper.png" >
+            </div>
+            <div class="scissors1 computer">
+                <img src="./scissors.png" >
+            </div>
+        </div>
+
+
+        <!---Winner-->
+        <div class="win" style="display: none;">
+            <h2 class="winner">YOU WIN </h2><br> 
+            <h2 class="newline">AGAINST PC</h2>
+            <button class="play-again" >Play Again</button>
+            <button class="replay" style="display: none;">REPLAY</button>
+        </div>
+
+
+        <div class="details">
+            <p id="user_choice"></p>
+            <p id="comp_choice"></p>
+            <p id="result"></p>
+        </div>
+
+
+        <!---Rules-->
+        <div class="hide" style="display: none;">
+        <div class="game-rules">
+            <p class="rule-heading">Game Rules</p>
+            <div class="rule-body">
+                <p class="rule-text">Rock beats scissors, scissors beat paper, and paper beats rock.</p>
+                <p class="rule-text">Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</p>
+                <p class="rule-text">Use rock, paper, scissors to settle minor decisions or simply play to pass the time</p>
+                <p class="rule-text">If both players lay down the same hand, each player lays down another hand</p>
+            </div>
+        </div>
+        <div class="cross-x">X</div>
+        </div>
+        <button type="button" class="next"><a href="./hurray.html">NEXT</a></button>
+        <button type="button" class="rules">RULES</button>
+        <script src="script.js"></script>
+    </body>
+</html>
